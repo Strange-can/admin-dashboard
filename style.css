@@ -55,16 +55,18 @@ body {
     display: flex;
     flex-direction: column;
 
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 5px;
 }
 
 .nav > div > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 4px;
 
     display: flex;
     align-items: center;
@@ -141,16 +143,18 @@ body {
     display: flex;
     flex-direction: column;
 
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 5px;
 }
 
 .account-matters > div > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 4px;
 
     display: flex;
     align-items: center;
@@ -206,8 +210,8 @@ body {
 .search {
     grid-column: 1 / 2;
 
-    padding-top: 4vh;
-    padding-left: 3vw;
+    margin-top: 4vh;
+    margin-left: 3vw;
 
     display: flex;
     align-items: center;
