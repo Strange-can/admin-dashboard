@@ -49,26 +49,85 @@ body {
 }
 
 
-.nav > a {
+.nav > div {
     margin: 0;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
 
     display: flex;
     flex-direction: column;
 
-    padding-left: 1.5vw;
-    
-    color: white;
-    text-decoration: none;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 2vw;
 }
 
-.nav > a:hover {
+.nav > div > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+
+.nav > div:hover {
     background-color: #5b21b6;
 }
 
 /* logos for .nav elements */
+.home::before {
+    content: url(styling-resources/sidebar-icons/home-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
 
+.profile::before {
+    content: url(styling-resources/sidebar-icons/profile-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+
+.messages::before {
+    content: url(styling-resources/sidebar-icons/messages-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+
+.history::before {
+    content: url(styling-resources/sidebar-icons/history-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+
+.tasks::before {
+    content: url(styling-resources/sidebar-icons/tasks-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+
+.communities::before {
+    content: url(styling-resources/sidebar-icons/communities-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
 /* end of logo placements for .nav elements */
 .content {
     background-color: lightgray;
