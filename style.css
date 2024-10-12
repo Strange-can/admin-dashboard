@@ -74,7 +74,7 @@ body {
     background-color: #5b21b6;
 }
 
-/* logos for .nav elements */
+/* icons for .nav elements */
 .home::before {
     content: url(styling-resources/sidebar-icons/home-icon-odin.svg);
     display: inline-block;
@@ -128,7 +128,66 @@ body {
     padding-top: 5px;
     filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
 }
-/* end of logo placements for .nav elements */
+/* end of icon placements for .nav elements */
+
+.account-matters {
+    padding-top: 10vh;
+}
+
+.account-matters > div {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 2vw;
+}
+
+.account-matters > div > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+
+.account-matters > div:hover {
+    background-color: #5b21b6;
+}
+
+/* icon placements for .account-matters */
+.settings::before {
+    content: url(styling-resources/sidebar-icons/settings-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+
+.support::before {
+    content: url(styling-resources/sidebar-icons/support-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+
+.privacy::before {
+    content: url(styling-resources/sidebar-icons/privacy-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 5px;
+    filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
+}
+/* end of icon placements for .account-matters */
+
 .content {
     background-color: lightgray;
 }
