@@ -58,6 +58,7 @@ body {
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .nav > div > a {
@@ -143,6 +144,7 @@ body {
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .account-matters > div > a {
@@ -187,6 +189,40 @@ body {
     filter: invert(97%) sepia(1%) saturate(3736%) hue-rotate(185deg) brightness(102%) contrast(95%);
 }
 /* end of icon placements for .account-matters */
+
+.header {
+    display: grid;
+    grid-template: 1fr 1fr / 2.5fr 1fr;
+}
+
+.search::before {
+    content: url(styling-resources/search-icon-odin.svg);
+    display: inline-block;
+    height: auto;
+    width: 1.8vw;
+    padding-top: 7px;
+}
+
+.search {
+    grid-column: 1 / 2;
+
+    padding-top: 4vh;
+    padding-left: 3vw;
+
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.search > input {
+    width: 45vw;
+    height: 5vh;
+    background-color: #e7e5e4;
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    padding: 4px 10px;
+}
 
 .content {
     background-color: lightgray;
