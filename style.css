@@ -200,6 +200,8 @@ body {
     row-gap: 2vh;
 
     padding: 2.5vh 2vw 3vh 3vw;
+
+    border-bottom: 3px solid darkgrey;
 }
 
 .search::before {
@@ -279,4 +281,24 @@ body {
 
 .greetings > .text > p + p {
     font-size: 1.5em;
+}
+
+.social {
+    display: flex;
+    gap: 1.5vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social > button {
+    width: 7vw;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+    border-radius: 20px;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
 }
