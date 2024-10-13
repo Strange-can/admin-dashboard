@@ -304,11 +304,12 @@ body {
 
 .content {
     background-color: #e7e5e4;
-    padding: 4vh 2vw 4vh 2vw;
+    padding: 4vh 2vw 8vh 2vw;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 0.2fr 3fr;
+    row-gap: 2vh;
 }
 
 .content > p {
@@ -335,6 +336,10 @@ body {
     cursor: pointer;
 
     background-image: linear-gradient(to right, orange 4%, rgba(0,0,0,0) 4%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -349,4 +354,22 @@ body {
 .label {
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.actions {
+    display: flex;
+    gap: 2.2vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 8%;
+    margin-bottom: 5%;
+}
+
+.actions > a > img {
+    width: 1.8vw;
+    height: auto;
+}
+
+.actions > a > img:hover {
+    filter: invert(67%) sepia(3%) saturate(608%) hue-rotate(202deg) brightness(97%) contrast(89%);
 }
