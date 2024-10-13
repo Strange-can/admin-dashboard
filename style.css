@@ -204,7 +204,7 @@ body {
     grid-template: 1fr 1fr / 2.5fr 1fr;
     row-gap: 2vh;
 
-    padding: 2.5vh 2vw 3vh 3vw;
+    padding: 2vh 2vw 2vh 3vw;
 }
 
 .search::before {
@@ -304,10 +304,11 @@ body {
 
 .content {
     background-color: #e7e5e4;
-    padding: 5vh 2vw 5vh 2vw;
+    padding: 4vh 2vw 4vh 2vw;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
 }
 
 .content > p {
@@ -316,5 +317,36 @@ body {
 
 .content > .title {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
+}
+
+.card-container {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25vw);
+    column-gap: 3vw;
+    row-gap: 3vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0.05em 0.1em 0.1em darkgrey;
+    cursor: pointer;
+
+    background-image: linear-gradient(to right, orange 4%, rgba(0,0,0,0) 4%);
+}
+
+.card:hover {
+    box-shadow: 0.05em 0.1em 0.4em darkgrey;
+}
+
+.words {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.1em;
 }
