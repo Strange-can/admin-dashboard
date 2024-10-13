@@ -197,6 +197,9 @@ body {
 .header {
     display: grid;
     grid-template: 1fr 1fr / 2.5fr 1fr;
+    row-gap: 2vh;
+
+    padding: 2.5vh 2vw 3vh 3vw;
 }
 
 .search::before {
@@ -209,9 +212,6 @@ body {
 
 .search {
     grid-column: 1 / 2;
-
-    margin-top: 2.5vh;
-    margin-left: 3vw;
 
     display: flex;
     align-items: center;
@@ -231,10 +231,8 @@ body {
 .user-status {
     grid-column: 2 / 3;
 
-    margin-top: 2.5vh;
     font-weight: bold;
     font-size: 1.2em;
-    padding-right: 2vw;
 
     display: flex;
     gap: 1.5vw;
@@ -256,4 +254,29 @@ body {
 
 .content {
     background-color: lightgray;
+}
+
+.greetings {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+
+    padding-left: 1vw;
+}
+
+.greetings > img {
+    height: 10vh;
+    width: auto;
+
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.greetings > .text > p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.greetings > .text > p + p {
+    font-size: 1.5em;
 }
