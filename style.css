@@ -75,6 +75,7 @@ body {
 
 .nav > div:hover {
     background-color: #5b21b6;
+    transform: scale(1.1);
 }
 
 /* icons for .nav elements */
@@ -163,6 +164,7 @@ body {
 
 .account-matters > div:hover {
     background-color: #5b21b6;
+    transform: scale(1.1);
 }
 
 /* icon placements for .account-matters */
@@ -205,6 +207,12 @@ body {
     row-gap: 2vh;
 
     padding: 2vh 2vw 2vh 3vw;
+}
+
+.pfp:hover {
+    rotate: -10deg;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .search::before {
@@ -257,6 +265,11 @@ body {
     border: 2px solid black;
 }
 
+.user-status > img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .greetings {
     display: flex;
     gap: 1.5vw;
@@ -302,6 +315,11 @@ body {
     cursor: pointer;
 }
 
+.social > button:hover {
+    background-color: #60a5fa;
+    transform: scale(1.1);
+}
+
 .content {
     background-color: #e7e5e4;
     padding: 4vh 2vw 8vh 2vw;
@@ -344,6 +362,7 @@ body {
 
 .card:hover {
     box-shadow: 0.05em 0.1em 0.4em darkgrey;
+    background-image: linear-gradient(to right, red 4%, rgba(0,0,0,0) 4%);
 }
 
 .words {
@@ -372,4 +391,5 @@ body {
 
 .actions > a > img:hover {
     filter: invert(67%) sepia(3%) saturate(608%) hue-rotate(202deg) brightness(97%) contrast(89%);
+    transform: scale(1.2);
 }
