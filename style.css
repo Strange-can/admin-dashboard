@@ -334,7 +334,7 @@ body {
     margin: 0;
 }
 
-.content > .title {
+.title {
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -396,7 +396,7 @@ body {
 
 .updates {
     display: grid;
-    grid-template-rows: 0.8fr 1fr;
+    grid-template-rows: 0.8fr 0.1fr 1fr;
 }
 
 .right-bar-1 {
@@ -425,4 +425,51 @@ body {
     font-size: 0.7em;
 
     cursor: pointer;
+}
+
+.right-bar-2 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3vh 0.5vw 2vh 0.5vw;
+
+    cursor: pointer;
+}
+.title {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.account > img {
+    width: 4vw;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.account {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+
+    padding: 1vh 1.5vw;
+    border-radius: 7px;
+}
+
+.account:hover {
+    background-color: #a5b4fc;
+    transform: scale(1.1);
+}
+
+.user > p {
+    margin: 0;
+}
+
+.username {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 0.8em;
+    color: #1c1917;
 }
